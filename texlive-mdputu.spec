@@ -1,3 +1,9 @@
+# revision 20298
+# category Package
+# catalog-ctan /fonts/mdputu
+# catalog-date 2010-11-03 15:55:25 +0100
+# catalog-license other-free
+# catalog-version 1.2
 Name:		texlive-mdputu
 Version:	1.2
 Release:	1
@@ -55,6 +61,7 @@ extension to Mathdesign Utopia.
 %doc %{_texmfdistdir}/doc/latex/mdputu/mdputu.pdf
 %doc %{_texmfdistdir}/doc/latex/mdputu/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/mdputu/sample.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ extension to Mathdesign Utopia.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
