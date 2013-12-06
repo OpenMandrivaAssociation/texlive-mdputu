@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-mdputu
 Version:	1.2
-Release:	4
+Release:	5
 Summary:	Upright digits in Adobe Utopia Italic
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/mdputu
